@@ -62,7 +62,7 @@ def get_completion(prompt: str):
 
 
 def load_mmlu_pro():
-	dataset = load_dataset("TIGER-Lab/MMLU-Pro")
+	dataset = load_dataset("sam-paech/mmlu-pro-irt-1-0")
 	test_df, val_df = dataset["test"], dataset["validation"]
 	test_df = preprocess(test_df)
 	val_df = preprocess(val_df)
